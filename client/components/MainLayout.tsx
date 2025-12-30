@@ -24,13 +24,15 @@ export function MainLayout({ children }: MainLayoutProps) {
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.svg" alt="Footprints" className="h-10 w-auto" />
-            <h1 className="text-xl font-bold text-gray-900">Footprints Design Desk</h1>
+            {/* Logo only (no extra title text) */}
+            <img
+              src="/logo.svg"
+              alt="Footprints"
+              className="h-14 w-auto"
+            />
           </div>
-          <div className="text-sm text-gray-600">
-            <span>Typography: </span>
-            <span className="font-semibold">Segoe UI</span>
-          </div>
+          {/* Replace typography indicator with simple product label */}
+          <div className="text-sm font-semibold text-gray-800">Design Desk</div>
         </div>
       </header>
 
